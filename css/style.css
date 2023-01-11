@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+*{
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0; 
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width; 1200px;
+    padding: 80px 0;
+}
+
+.container--hero{
+    padding: 0;
+}
+
+.nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu{
+    background-color:orange;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.nav__list{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: blue;
+    padding: 80px 0;
+    display:grid;
+    place-content: center;
+    text-align: center;
+    gap: 5rem;
+    list-style: none;
+    transform: translate(-100%);
+    transition: transform .3s;
+}
+
+.nav__list--show{
+    transform: translate(0);
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    display: grid;
+}
+
+
+/*hero-main*/
+
+.hero__main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero__figure{
+    order: -1;
+    padding: 20px 0;
+}
+
+.hero__img{
+    width: 100%;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero__texts{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: .5rem; 
+}
+
+.hero__cta{
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 3em;
+    justify-self: center;
+    border-radius: 6px;
+}
+
+/*about*/
+
+.about__container{
+    display: flex;
+    flex-direction:column ;
+    gap: 2rem;
+}
+
+.about__img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    aspect-ratio: 1/1;
+    max-width: 280px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.about__text{
+    text-align: center;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.paragraph{
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/*learn*/
+
+.learn__articles{
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+}
+
+.learn__article{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.learn__img{
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 60%;
+
+}
+
+/*statistics"*/
+
+.statistics{
+    background-image: linear-gradient(#19181bc0, #171719e3),
+    url(../assets/img/foto5.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    gap: 3rem;
+}
+
+.statistics__container{
+    display: grid;
+    gap: 2.5rem;
+}
+
+.statistics__item{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.statistics__title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/*footer*/
+
+.footer{
+    background-color:#fff;
+}
+
+
+.footer__contact{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.footer__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer__img{
+    width: 28px;
+}
+
+
+/*contacto*/
+
+.container-contact{
+    padding: 1.5em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(rgba(12, 0, 0, 0.336), rgba(0, 0, 0, 0.404), rgba(0, 0, 3, 0.377), alpha);
+    padding: 1em;
+    
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button{
+
+}
+
+
+.contact-form form input{
+
+}
+
+
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #d63031;
+
+}
